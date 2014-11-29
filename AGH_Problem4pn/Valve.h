@@ -16,9 +16,9 @@ public:
 	void open();
 	void close();
 	static void clean();
-	static Lista < Valve > list;
 private:
 	Flags flag;
+	static Lista < Valve > list;
 };
 
 Lista<Valve> Valve::list;
