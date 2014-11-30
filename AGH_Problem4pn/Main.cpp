@@ -1,8 +1,5 @@
 #include "Valve.h"
 
-string status2symbol(Valve& valve){
-	return valve.IsOpen() == 1 ? "Otwarty" : "Zamkniety";
-}
 
 int main() {
 

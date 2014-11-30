@@ -16,6 +16,7 @@ public:
 	void open();
 	void close();
 	static void clean();
+	friend string status2symbol(Valve& valve); 
 private:
 	Flags flag;
 	static Lista < Valve > list;
@@ -72,4 +73,8 @@ void Valve::clean(){
 	{
 		(*iter).close();
 	}
+}
+
+string status2symbol(Valve& valve){
+	return valve.IsOpen() == 1 ? "Otwarty" : "Zamkniety";
 }
